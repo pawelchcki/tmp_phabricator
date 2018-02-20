@@ -8,8 +8,8 @@ jobs:
           RELEASE_SERIES_LIST: "2018"
           LATEST_STABLE: "2018"
           IMAGE_NAME: phabricator
-          CHART_NAME: phabricator
-          CHART_REPO: https://github.com/kubernetes/charts
+          CHART_REPO: https://github.com/bitnami/charts
+          EXTRA_CHART_REPOS_LIST: "https://github.com/kubernetes/charts"
           DOCKER_PROJECT: bitnami
           QUAY_PROJECT: bitnami
           GCLOUD_PROJECT: bitnami-containers
