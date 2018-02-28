@@ -8,5 +8,10 @@
   "host": "{{$global.env.PHABRICATOR_HOST}}",
   "lastName": "{{$global.env.PHABRICATOR_LASTNAME}}",
   "password": "{{$global.env.PHABRICATOR_PASSWORD}}",
+  "smtpHost": "{{$global.env.SMTP_HOST}}",
+  "smtpPassword": "{{$global.env.SMTP_PASSWORD}}",
+  "smtpPort": "{{$global.env.SMTP_PORT}}",
+  "smtpProtocol": "{{$global.env.SMTP_PROTOCOL}}",
+  "smtpUser": "{{$global.env.SMTP_USER}}",
   "username": "{{$global.env.PHABRICATOR_USERNAME}}"
 }

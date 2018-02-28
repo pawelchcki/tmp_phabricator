@@ -261,11 +261,11 @@ $ docker run -d --name phabricator -p 80:80 -p 443:443 \
 
 To configure phabricator to send email using SMTP you can set the following environment variables:
 
- - `SMTP_HOST`: SMTP host.
- - `SMTP_PORT`: SMTP port.
- - `SMTP_USER`: SMTP account user.
- - `SMTP_PASSWORD`: SMTP account password.
- - `SMTP_PROTOCOL`: SMTP protocol.
+ - `SMTP_HOST`: SMTP host. No defaults
+ - `SMTP_PORT`: SMTP port. No defaults
+ - `SMTP_USER`: SMTP account user. No defaults
+ - `SMTP_PASSWORD`: SMTP account password. No defaults
+ - `SMTP_PROTOCOL`: SMTP protocol. No defaults. Possible values are `ssl` for port 465 and `tls` for port 587
 
 This would be an example of SMTP configuration using a GMail account:
 
@@ -281,6 +281,7 @@ This would be an example of SMTP configuration using a GMail account:
       - SMTP_PORT=587
       - SMTP_USER=your_email@gmail.com
       - SMTP_PASSWORD=your_password
+      - SMTP_PROTOCOL=tls
 ```
 
  * For manual execution:
