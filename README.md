@@ -287,7 +287,7 @@ This would be an example of SMTP configuration using a GMail account:
  * For manual execution:
 
 ```bash
- $ docker run -d -e SMTP_HOST=smtp.gmail.com -e SMTP_PORT=587 -e SMTP_USER=your_email@gmail.com -e SMTP_PASSWORD=your_password -p 80:80 --name phabricator -v /your/local/path/bitnami/phabricator:/bitnami --net=phabricator_network bitnami/phabricator
+ $ docker run -d -e SMTP_HOST=smtp.gmail.com -e SMTP_PORT=587 -e SMTP_USER=your_email@gmail.com -e SMTP_PASSWORD=your_password -e SMTP_PROTOCOL=tls -p 80:80 --name phabricator -v /your/local/path/bitnami/phabricator:/bitnami --net=phabricator_network bitnami/phabricator
 ```
 
 # How to migrate from a Bitnami Phabricator Stack
