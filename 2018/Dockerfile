@@ -1,4 +1,4 @@
-FROM bitnami/minideb-extras:jessie-r56
+FROM bitnami/minideb-extras:jessie-r61
 LABEL maintainer "Bitnami <containers@bitnami.com>"
 
 # Install required system packages and dependencies
@@ -7,14 +7,14 @@ RUN bitnami-pkg unpack apache-2.4.33-3 --checksum 55bc664737e2ff9d534468088424ee
 RUN bitnami-pkg unpack php-7.1.11-0 --checksum 2dbdbadb1a9020dfced88a368371781481c27d99956eec5d6b06ce27e796c16e
 RUN bitnami-pkg install mysql-client-10.1.25-0 --checksum 513ef36ab1efa5570332547c2027ae29886fe4bb56472de11ca083423a3fe366
 RUN bitnami-pkg install libphp-7.1.11-0 --checksum 9acea15fe83658d792dc6b272f406a155ec7ef2f91f61c2621a2d4213fc86f9d
-RUN bitnami-pkg install git-2.17.0-1 --checksum 55d5f1e194e9414d752c3b6962f8edf3737e13f33bba567ccaf76f18770ea407
+RUN bitnami-pkg install git-2.17.1-0 --checksum 948b00c283f89cac532ee3b2cd26b3efde12fe5425f25c6d836a96cebd35a8a7
 RUN bitnami-pkg unpack phabricator-2018.20.0-0 --checksum c18b6ca33ff6ad390a3c85b742b653d5993ede2347805d93e1181d8db8ec525d
 
 COPY rootfs /
 ENV APACHE_HTTPS_PORT_NUMBER="443" \
     APACHE_HTTP_PORT_NUMBER="80" \
     BITNAMI_APP_NAME="phabricator" \
-    BITNAMI_IMAGE_VERSION="2018.20.0-r1" \
+    BITNAMI_IMAGE_VERSION="2018.20.0-r2" \
     MARIADB_HOST="mariadb" \
     MARIADB_PASSWORD="" \
     MARIADB_PORT_NUMBER="3306" \
