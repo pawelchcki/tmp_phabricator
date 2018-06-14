@@ -195,7 +195,7 @@ You can use these snapshots to restore the application state should the upgrade 
 
 5. Run the new image
 
- * For docker-compose: `$ docker-compose start phabricator`
+ * For docker-compose: `$ docker-compose up phabricator`
  * For manual execution ([mount](#mount-persistent-folders-manually) the directories if needed): `docker run --name phabricator bitnami/phabricator:latest`
 
 # Configuration
