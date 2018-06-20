@@ -25,7 +25,7 @@ $ docker-compose up -d
 
 # Supported tags and respective `Dockerfile` links
 
-* [`2018`, `2018.24.0-r0`, `latest` (2018/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.24.0-r0/2018/Dockerfile)
+* [`2018`, `2018.24.0-r1`, `latest` (2018/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.24.0-r1/2018/Dockerfile)
 
 Subscribe to project updates by watching the [bitnami/phabricator GitHub repo](https://github.com/bitnami/bitnami-docker-phabricator).
 
