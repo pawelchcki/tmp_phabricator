@@ -8,18 +8,19 @@ RUN bitnami-pkg unpack php-7.1.19-3 --checksum 6abeece779f39fadefe611cdd711dceee
 RUN bitnami-pkg install mysql-client-10.1.34-0 --checksum 2954d9390cb8b91dc924beacc179ed03050f6c5cb7ad328010cdbde1ab05c1e9
 RUN bitnami-pkg install libphp-7.1.19-0 --checksum d2c5f7fbff697f87b8983f5f23a5a8eb495fc8b66a25f7f8391a622c79cd7dd1
 RUN bitnami-pkg install git-2.18.0-0 --checksum 107278388849d944d1f3cc305087e1a1c0b3a52801c112572664e91c44a12cdf
-RUN bitnami-pkg unpack phabricator-2018.25.0-2 --checksum ab60a33248e14ce4edf60b0d2ec0b9a00e3c925782724438d1ed3d53b0907f7b
+RUN bitnami-pkg unpack phabricator-2018.25.0-3 --checksum 273aa1f20a61ccfd3ad275763617b8dde5c1ba3026644e52d2285f5bbb12594e
 
 COPY rootfs /
 ENV APACHE_HTTPS_PORT_NUMBER="443" \
     APACHE_HTTP_PORT_NUMBER="80" \
     BITNAMI_APP_NAME="phabricator" \
-    BITNAMI_IMAGE_VERSION="2018.25.0-debian-8-r7" \
+    BITNAMI_IMAGE_VERSION="2018.25.0-debian-8-r8" \
     MARIADB_HOST="mariadb" \
     MARIADB_PASSWORD="" \
     MARIADB_PORT_NUMBER="3306" \
     MARIADB_USER="root" \
     PATH="/opt/bitnami/apache/bin:/opt/bitnami/php/bin:/opt/bitnami/mysql/bin:/opt/bitnami/git/bin:/opt/bitnami/arcanist/bin:/opt/bitnami/phabricator/bin:$PATH" \
+    PHABRICATOR_ALTERNATE_FILE_DOMAIN="" \
     PHABRICATOR_EMAIL="user@example.com" \
     PHABRICATOR_FIRSTNAME="FirstName" \
     PHABRICATOR_HOST="127.0.0.1" \
