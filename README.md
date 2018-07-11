@@ -25,9 +25,9 @@ $ docker-compose up -d
 
 # Supported tags and respective `Dockerfile` links
 
-* [`2018-ol-7`, `2018.25.0-ol-7-r14` (2018/ol-7/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.25.0-ol-7-r14/2018/ol-7/Dockerfile)
-* [`2018-debian-9`, `2018.25.0-debian-9-r1` (2018/debian-9/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.25.0-debian-9-r1/2018/debian-9/Dockerfile)
-* [`2018-debian-8`, `2018.25.0-debian-8-r9`, `2018`, `2018.25.0`, `2018.25.0-r9`, `latest` (2018/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.25.0-debian-8-r9/2018/Dockerfile)
+* [`2018-ol-7`, `2018.25.0-ol-7-r15` (2018/ol-7/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.25.0-ol-7-r15/2018/ol-7/Dockerfile)
+* [`2018-debian-9`, `2018.25.0-debian-9-r1`, `2018`, `2018.25.0`, `2018.25.0-r1`, `latest` (2018/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.25.0-debian-9-r1/2018/Dockerfile)
+* [`2018-debian-8`, `2018.25.0-debian-8-r9` (2018/debian-8/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.25.0-debian-8-r9/2018/debian-8/Dockerfile)
 
 Subscribe to project updates by watching the [bitnami/phabricator GitHub repo](https://github.com/bitnami/bitnami-docker-phabricator).
 
