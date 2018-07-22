@@ -29,7 +29,7 @@ $ docker-compose up -d
 
 
 * [`2018-ol-7`, `2018.25.0-ol-7-r26` (2018/ol-7/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.25.0-ol-7-r26/2018/ol-7/Dockerfile)
-* [`2018-debian-9`, `2018.25.0-debian-9-r9`, `2018`, `2018.25.0`, `2018.25.0-r9`, `latest` (2018/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.25.0-debian-9-r9/2018/Dockerfile)
+* [`2018-debian-9`, `2018.25.0-debian-9-r10`, `2018`, `2018.25.0`, `2018.25.0-r10`, `latest` (2018/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.25.0-debian-9-r10/2018/Dockerfile)
 
 Subscribe to project updates by watching the [bitnami/phabricator GitHub repo](https://github.com/bitnami/bitnami-docker-phabricator).
 
