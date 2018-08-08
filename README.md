@@ -28,7 +28,7 @@ $ docker-compose up -d
 > NOTE: Debian 8 images have been deprecated in favor of Debian 9 images. Bitnami will not longer publish new Docker images based on Debian 8.
 
 
-* [`2018-ol-7`, `2018.30.0-ol-7-r4` (2018/ol-7/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.30.0-ol-7-r4/2018/ol-7/Dockerfile)
+* [`2018-ol-7`, `2018.30.0-ol-7-r5` (2018/ol-7/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.30.0-ol-7-r5/2018/ol-7/Dockerfile)
 * [`2018-debian-9`, `2018.30.0-debian-9-r6`, `2018`, `2018.30.0`, `2018.30.0-r6`, `latest` (2018/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.30.0-debian-9-r6/2018/Dockerfile)
 
 Subscribe to project updates by watching the [bitnami/phabricator GitHub repo](https://github.com/bitnami/bitnami-docker-phabricator).
