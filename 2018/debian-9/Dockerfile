@@ -1,4 +1,4 @@
-FROM bitnami/minideb-extras:stretch-r104
+FROM bitnami/minideb-extras:stretch-r105
 LABEL maintainer "Bitnami <containers@bitnami.com>"
 
 # Install required system packages and dependencies
@@ -8,13 +8,13 @@ RUN bitnami-pkg unpack php-7.1.20-1 --checksum 5dc3991c54fef02b2c83dcd1ff703fb77
 RUN bitnami-pkg install mysql-client-10.1.35-0 --checksum 368b07877bfeecb697d036647a39cac0152c11543763ec1290dad783c36fdd36
 RUN bitnami-pkg install libphp-7.1.20-1 --checksum 9135558c3f9fcf1de3392b7350400571543777554261b9b69af1131f28477765
 RUN bitnami-pkg install git-2.18.0-1 --checksum acf77a7b174b2b4201335fc400a4fa32dbdca237d18fa90a5fa76f4fd3008517
-RUN bitnami-pkg unpack phabricator-2018.31.0-0 --checksum f823211ae16c5ea7b7abb64236ee9a061aec068749942fc55f183d98abf9ad7c
+RUN bitnami-pkg unpack phabricator-2018.32.0-0 --checksum 3c6a8f1b9de1d152364f6d6ec7706efda08cae9376ee14bc1f633f91e7d56e19
 
 COPY rootfs /
 ENV APACHE_HTTPS_PORT_NUMBER="443" \
     APACHE_HTTP_PORT_NUMBER="80" \
     BITNAMI_APP_NAME="phabricator" \
-    BITNAMI_IMAGE_VERSION="2018.31.0-debian-9-r3" \
+    BITNAMI_IMAGE_VERSION="2018.32.0-debian-9-r0" \
     MARIADB_HOST="mariadb" \
     MARIADB_PASSWORD="" \
     MARIADB_PORT_NUMBER="3306" \
