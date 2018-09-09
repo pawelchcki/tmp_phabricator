@@ -1,11 +1,11 @@
-FROM bitnami/oraclelinux-extras:7-r97
+FROM bitnami/oraclelinux-extras:7-r99
 LABEL maintainer "Bitnami <containers@bitnami.com>"
 
 # Install required system packages and dependencies
 RUN install_packages bzip2-libs cyrus-sasl-lib expat freetds freetype glibc gmp gnutls keyutils-libs krb5-libs libcom_err libcurl libffi libgcc libgcrypt libgpg-error libicu libidn libjpeg-turbo libmcrypt libpng libselinux libssh2 libstdc++ libtasn1 libtidy libxml2 libxslt ncurses-libs nettle nspr nss nss-softokn-freebl nss-util openldap openssl-libs p11-kit pcre postgresql-libs readline sqlite xz-libs zlib
 RUN bitnami-pkg unpack apache-2.4.34-1 --checksum d06af72741b365147c39bb30ca9e1df1501d97c3c6a44b200e64c3c4eb7878f6
 RUN bitnami-pkg unpack php-7.1.21-1 --checksum 4cabe42c596860ab9ab75f2811e465e24d923e5dea139623d58aaeffc53f3d31
-RUN bitnami-pkg install mysql-client-10.1.35-0 --checksum e8b7b1feec15c0dd8c1643eb0ab0220c384e1eb981e1ef7cd51d06bb9fb09e6e
+RUN bitnami-pkg install mysql-client-10.1.36-0 --checksum 066d5ea1a684175a9a9709a0d7d1585067324f58bcd8a569d1fd8e61028dc71b
 RUN bitnami-pkg install libphp-7.1.21-0 --checksum e1b4055d7d47b37f22a5c4765c70a03a3130307bcd4779d3f01daa340519a9b0
 RUN bitnami-pkg install git-2.18.0-1 --checksum e09020e93542133c5f61daaa5a47bdcb94ec5303dd336ae05fa561729786284c
 RUN bitnami-pkg unpack phabricator-2018.34.0-0 --checksum 7dff33933d455de5d89c5ab47273820de5ff18b961be408c84cabe6f7cd2667f
@@ -14,7 +14,7 @@ COPY rootfs /
 ENV APACHE_HTTPS_PORT_NUMBER="443" \
     APACHE_HTTP_PORT_NUMBER="80" \
     BITNAMI_APP_NAME="phabricator" \
-    BITNAMI_IMAGE_VERSION="2018.34.0-ol-7-r10" \
+    BITNAMI_IMAGE_VERSION="2018.34.0-ol-7-r11" \
     MARIADB_HOST="mariadb" \
     MARIADB_PASSWORD="" \
     MARIADB_PORT_NUMBER="3306" \
