@@ -23,6 +23,10 @@ $ docker-compose up -d
 * Bitnami images are built on CircleCI and automatically pushed to the Docker Hub.
 * All our images are based on [minideb](https://github.com/bitnami/minideb) a minimalist Debian based container image which gives you a small base container image and the familiarity of a leading linux distribution.
 
+# How to deploy Phabricator in Kubernetes?
+
+Deploying Bitnami applications as Helm Charts is the easiest way to get started with our applications on Kubernetes. Read more about the installation in the [Bitnami Phabricator Chart GitHub repository](https://github.com/bitnami/charts/tree/master/upstreamed/phabricator).
+
 # Supported tags and respective `Dockerfile` links
 
 > NOTE: Debian 8 images have been deprecated in favor of Debian 9 images. Bitnami will not longer publish new Docker images based on Debian 8.
@@ -30,7 +34,7 @@ $ docker-compose up -d
 Learn more about the Bitnami tagging policy and the difference between rolling tags and immutable tags [in our documentation page](https://docs.bitnami.com/containers/how-to/understand-rolling-tags-containers/).
 
 
-* [`2018-ol-7`, `2018.37.0-ol-7-r3` (2018/ol-7/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.37.0-ol-7-r3/2018/ol-7/Dockerfile)
+* [`2018-ol-7`, `2018.37.0-ol-7-r4` (2018/ol-7/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.37.0-ol-7-r4/2018/ol-7/Dockerfile)
 * [`2018-debian-9`, `2018.37.0-debian-9-r3`, `2018`, `2018.37.0`, `2018.37.0-r3`, `latest` (2018/debian-9/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.37.0-debian-9-r3/2018/debian-9/Dockerfile)
 
 Subscribe to project updates by watching the [bitnami/phabricator GitHub repo](https://github.com/bitnami/bitnami-docker-phabricator).
