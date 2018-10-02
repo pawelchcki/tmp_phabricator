@@ -8,13 +8,13 @@ RUN bitnami-pkg unpack php-7.1.22-1 --checksum d454d26b6288af034ee7af734bd3775f5
 RUN bitnami-pkg install mysql-client-10.1.36-0 --checksum 066d5ea1a684175a9a9709a0d7d1585067324f58bcd8a569d1fd8e61028dc71b
 RUN bitnami-pkg install libphp-7.1.22-1 --checksum 42018a53bcaf3217a061e58c9db5a2f31c8b92ee646fd7cf9ce0b78c421d2091
 RUN bitnami-pkg install git-2.19.0-0 --checksum 3ef1679e21948e6a40ab47411362f9c49bcd9b5d22b8567c6bfc6cb757d78d28
-RUN bitnami-pkg unpack phabricator-2018.38.0-0 --checksum d01a20b114a445c07421c8bcd8ea67be7e9bf948aaa15aa157fd04846b41cb60
+RUN bitnami-pkg unpack phabricator-2018.39.0-0 --checksum d45036e5280d9229ea0043f071c51494ff68e32215923ead7ed8b02d89adfef6
 
 COPY rootfs /
 ENV APACHE_HTTPS_PORT_NUMBER="443" \
     APACHE_HTTP_PORT_NUMBER="80" \
     BITNAMI_APP_NAME="phabricator" \
-    BITNAMI_IMAGE_VERSION="2018.38.0-ol-7-r8" \
+    BITNAMI_IMAGE_VERSION="2018.39.0-ol-7-r0" \
     MARIADB_HOST="mariadb" \
     MARIADB_PASSWORD="" \
     MARIADB_PORT_NUMBER="3306" \
