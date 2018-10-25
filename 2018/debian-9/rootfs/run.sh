@@ -11,5 +11,11 @@ _forwardTerm () {
 trap _forwardTerm TERM
 
 nami start --foreground phabricator &
-nami start --foreground apache &
+
+DAEMON=httpd
+EXEC=$(which $DAEMON)
+ARGS="-f /opt/bitnami/apache/conf/httpd.conf -D FOREGROUND"
+
+info "Starting ${DAEMON}..."
+${EXEC} ${ARGS} & 
 wait
