@@ -41,8 +41,8 @@ Bitnami containers can be used with [Kubeapps](https://kubeapps.com/) for deploy
 Learn more about the Bitnami tagging policy and the difference between rolling tags and immutable tags [in our documentation page](https://docs.bitnami.com/containers/how-to/understand-rolling-tags-containers/).
 
 
-* [`2018-ol-7`, `2018.43.0-ol-7-r5` (2018/ol-7/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.43.0-ol-7-r5/2018/ol-7/Dockerfile)
-* [`2018-debian-9`, `2018.43.0-debian-9-r6`, `2018`, `2018.43.0`, `2018.43.0-r6`, `latest` (2018/debian-9/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.43.0-debian-9-r6/2018/debian-9/Dockerfile)
+* [`2018-ol-7`, `2018.44.0-ol-7-r0` (2018/ol-7/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.44.0-ol-7-r0/2018/ol-7/Dockerfile)
+* [`2018-debian-9`, `2018.44.0-debian-9-r0`, `2018`, `2018.44.0`, `2018.44.0-r0`, `latest` (2018/debian-9/Dockerfile)](https://github.com/bitnami/bitnami-docker-phabricator/blob/2018.44.0-debian-9-r0/2018/debian-9/Dockerfile)
 
 Subscribe to project updates by watching the [bitnami/phabricator GitHub repo](https://github.com/bitnami/bitnami-docker-phabricator).
 
