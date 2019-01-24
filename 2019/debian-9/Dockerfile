@@ -1,4 +1,4 @@
-FROM bitnami/minideb-extras:stretch-r262
+FROM bitnami/minideb-extras:stretch-r263
 LABEL maintainer "Bitnami <containers@bitnami.com>"
 
 # Install required system packages and dependencies
@@ -17,7 +17,7 @@ COPY rootfs /
 ENV APACHE_HTTPS_PORT_NUMBER="443" \
     APACHE_HTTP_PORT_NUMBER="80" \
     BITNAMI_APP_NAME="phabricator" \
-    BITNAMI_IMAGE_VERSION="2019.3.0-debian-9-r4" \
+    BITNAMI_IMAGE_VERSION="2019.3.0-debian-9-r5" \
     MARIADB_HOST="mariadb" \
     MARIADB_PASSWORD="" \
     MARIADB_PORT_NUMBER="3306" \
