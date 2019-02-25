@@ -1,4 +1,4 @@
-FROM bitnami/oraclelinux-extras:7-r271
+FROM bitnami/oraclelinux-extras:7-r272
 LABEL maintainer "Bitnami <containers@bitnami.com>"
 
 # Install required system packages and dependencies
@@ -7,7 +7,7 @@ RUN bitnami-pkg unpack apache-2.4.38-1 --checksum e1622f1e16e595c1758123c494d45a
 RUN bitnami-pkg unpack php-7.1.26-4 --checksum 4107361dd60b74f383a9d0a78afe49de960aa18001422e6e686c9335b2edfec4
 RUN bitnami-pkg install mysql-client-10.1.38-0 --checksum 8140732986832471cc54aede727b66729811a0fa79e6fa86c7c791ce1f513451
 RUN bitnami-pkg install libphp-7.1.26-2 --checksum f9adbff7a4be5b375413ea57f606d7934c22771d2238c264349b24da301b6426
-RUN bitnami-pkg install git-2.20.1-20 --checksum 160b41e17f0414c1206e97cc1eef3720596c0229922b68d4ded4a69bfc08cc51
+RUN bitnami-pkg install git-2.21.0-0 --checksum 8dc7078aeaa3c3bf7010f3adbdb2f7ec9c3737c7eb6c7c1b2f547350c42fcfa5
 RUN bitnami-pkg unpack phabricator-2019.6.0-0 --checksum 2c86142a96a0d80e23407bad56c4096ffda3c33b9f0ed77e5b34a775d19bcfc1
 RUN mkdir -p /opt/bitnami/apache/tmp && chmod g+rwX /opt/bitnami/apache/tmp
 RUN ln -sf /dev/stdout /opt/bitnami/apache/logs/access_log
@@ -17,7 +17,7 @@ COPY rootfs /
 ENV APACHE_HTTPS_PORT_NUMBER="443" \
     APACHE_HTTP_PORT_NUMBER="80" \
     BITNAMI_APP_NAME="phabricator" \
-    BITNAMI_IMAGE_VERSION="2019.6.0-ol-7-r9" \
+    BITNAMI_IMAGE_VERSION="2019.6.0-ol-7-r10" \
     MARIADB_HOST="mariadb" \
     MARIADB_PASSWORD="" \
     MARIADB_PORT_NUMBER="3306" \
