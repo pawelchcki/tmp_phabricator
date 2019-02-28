@@ -12,6 +12,14 @@ RUN bitnami-pkg unpack phabricator-2019.8.0-0 --checksum c8e8f028f3337f74296682c
 RUN mkdir -p /opt/bitnami/apache/tmp && chmod g+rwX /opt/bitnami/apache/tmp
 RUN ln -sf /dev/stdout /opt/bitnami/apache/logs/access_log
 RUN ln -sf /dev/stderr /opt/bitnami/apache/logs/error_log
+RUN set -xe; \
+    { \
+        echo ""; \
+        echo extension=/opt/datadog-php/extensions/ddtrace-20160303.so; \
+        echo dtrace.request_init_hook=/opt/datadog-php/dd-trace-sources/bridge/dd_wrap_autoloader.php; \
+    } | tee /opt/bitnami/php/etc/conf.d/ddtrace.ini; \
+    curl -o tmp.deb -L 'https://github.com/DataDog/dd-trace-php/releases/download/0.14.1/datadog-php-tracer_0.14.1-beta_amd64.deb'; \
+    dpkg -i tmp.deb; rm tmp.deb
 
 COPY rootfs /
 ENV APACHE_HTTPS_PORT_NUMBER="443" \

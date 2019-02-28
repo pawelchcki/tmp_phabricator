@@ -1,5 +1,14 @@
 version: '2'
 services:
+  agent:
+    image: datadog/agent:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /proc/:/host/proc/:ro
+      - /sys/fs/cgroup/:/host/sys/fs/cgroup:ro
+    environment:
+      - DD_API_KEY=${DD_TRACE_VERSION}
+      - DD_APM_ENABLED=true
   mariadb:
     image: 'bitnami/mariadb:latest'
     environment:
@@ -7,7 +16,7 @@ services:
     volumes:
       - 'mariadb_data:/bitnami'
   phabricator:
-    image: 'bitnami/phabricator:2019'
+    build: '.'
     ports:
       - '80:80'
       - '443:443'
@@ -15,6 +24,12 @@ services:
       - 'phabricator_data:/bitnami'
     depends_on:
       - mariadb
+      - agent
+    environment:
+      DD_AGENT_HOST: agent
+      DD_TRACE_APP_NAME: phabricator
+      DD_TRACE_DEBUG: "true"
+
 volumes:
   mariadb_data:
     driver: local
